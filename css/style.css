@@ -52,6 +52,7 @@ hr {
   display: flex;
   /* align-items: center; */
   justify-content: center;
+  border: dotted 2px #96ab7e;
 }
 
 .subsection {
@@ -80,7 +81,7 @@ hr {
   width: 85%;
   display: flex;
   justify-content: space-between;
-  border: solid 2px red;
+  border: dotted 2px #96ab7e;
 }
 
 h1,
