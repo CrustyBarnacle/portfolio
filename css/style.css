@@ -17,8 +17,8 @@ section {
 /* main CSS styles */
 body,
 main {
-  margin: 5px;
-  background-color: #eaeaea;
+  margin: 0;
+  background-color: #dadada;
 }
 
 body {
@@ -26,21 +26,28 @@ body {
   padding: 3px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .content {
-  width:inherit;
-  margin: 5px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   font-family: 'Open Sans', sans-serif;
+  color: #1d362f;
 }
 
 .main_content {
+  margin: 0 auto;
+  display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 hr {
-  width: 100%;
+  width: 88%;
   margin: 4px;
   padding: 1px;
   height: 3px;
@@ -52,6 +59,15 @@ hr {
   display: flex;
   /* align-items: center; */
   justify-content: center;
+  background: #4f9987;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+article {
+  width: 33%;
+  margin: 1em;
   border: dotted 2px #96ab7e;
 }
 
@@ -68,27 +84,21 @@ hr {
 * http://udacity.github.io/frontend-nanodegree-styleguide/css.html
 */
 
-/* Header */
-.header {
-/* TODO: Remove if not using */
-}
-
-.header-nav {
-/* TODO: Remove if not using */
-}
-
 .main_header {
-  width: 85%;
-  margin-bottom: 3px;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  border: dotted 2px #96ab7e;
+  background: #4f9987;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
 }
 
 h1,
 h3 {
   margin-right: 1em;
-  text-shadow: 2px 2px 2px #aaa;
+  text-shadow: 2px 2px 2px #07;
 }
 
 h1 {
@@ -105,14 +115,8 @@ h3 {
 }
 
 .main_logo {
-  justify-content: center;
-  margin: 1em;
+  margin: 0 auto;
   padding: 3px;
-}
-
-article {
-  width: 33%;
-  margin: 1em;
 }
 
 /* Footer */
@@ -120,7 +124,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font: 80% "Open Sans", sans-serif;
+  font: 85% "Open Sans", sans-serif;
 }
 
 .footer-nav {
@@ -130,7 +134,7 @@ footer {
 
 /* main Responsive CSS styles */
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 625px) {
   body,
   main,
   .main_header {
@@ -147,16 +151,14 @@ footer {
   }
 }
 
-@media screen and (min-width: 550px) {
-  body,
-  main {
-    /* TODO:  */
+@media screen and (min-width: 525px) {
+  .article {
+    width: 33%;
+    justify-content: space-around;
   }
-}
 
-@media screen and (min-width: 950px) {
-  body,
-  main {
-    /* TODO:  */
+  .featured_work {
+    width: 95%;
+    margin: 0 auto;
   }
 }
