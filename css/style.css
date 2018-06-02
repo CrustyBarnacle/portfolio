@@ -65,7 +65,7 @@ hr {
 }
 
 article {
-  width: 33%;
+  width: auto;
   margin: 1em;
   border: dotted 2px #96ab7e;
   background: #4f9987;
